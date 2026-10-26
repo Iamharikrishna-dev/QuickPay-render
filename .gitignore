@@ -1,0 +1,11 @@
+.env
+backend/target/
+node_modules/
+dist/
+target/
+.idea/
+
+.env
+.DS_Store
+backend.zip
+*.zip
