@@ -12,6 +12,7 @@ const money = (amount) => new Intl.NumberFormat("en-US", {
 }).format(Number(amount || 0));
 
 
+
 const API_BASE_URL = (
   import.meta.env.VITE_API_BASE_URL || ""
 ).replace(/\/$/, "");
