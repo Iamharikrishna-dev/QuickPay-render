@@ -38,7 +38,7 @@ async function api(path, options = {}, token = "") {
   return payload;
 }
 
-
+console.log("API BASE URL:", API_BASE_URL);
 function AuthScreen({ onAuthenticated }) {
   const [mode, setMode] = useState("login");
   const [form, setForm] = useState({ name: "", email: "", phone: "", password: "" });
