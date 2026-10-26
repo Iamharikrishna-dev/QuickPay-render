@@ -1,5 +1,6 @@
 package com.quickpay;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -19,6 +20,7 @@ class PaymentController {
     private final RestClient customerClient;
     private final RestClient merchantClient;
 
+    @Autowired
     PaymentController(JdbcTemplate jdbc, KafkaTemplate<Object, Object> kafka, Environment env) {
         this(jdbc, kafka,
             RestClient.builder()

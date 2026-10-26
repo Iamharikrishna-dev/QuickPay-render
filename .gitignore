@@ -1,11 +1,11 @@
-.env
-backend/target/
-node_modules/
-dist/
-target/
-.idea/
 
+# secrets - never commit
 .env
+render-env/
+*.pem
+*.crt
+
+# junk
 .DS_Store
 backend.zip
 *.zip
